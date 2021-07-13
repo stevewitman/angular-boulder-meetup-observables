@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  background-color: green;
+  color: white;
+  height: 4em;
+  h1 {
+    margin: auto;
+  }
+} 
+.example-link {
+  cursor: pointer;
+}
+
+.example-component {
+  border-left: 10px solid lightgray;
+  padding-left: 2em;
+}
+.container {
+  display: flex;
+  // max-width: 500px;
+  height: 100vh;
+}
+.sidenav {
+  min-width: 50px;
+  max-width: 150px;
+  background-color: lightgray;
+  padding: 2em;
+  a {
+    color: blue;
+    display: block;
+    font-size: 18px;
+    padding-bottom: 1em;
+    text-decoration: none;
+  }
+}
+
+
+.main {
+  width: 100%;
+  padding: 0 2em;
+}
+
+// TOOLTIP
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: blue;
+  color: #fff;
+  text-align: right;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 3px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  left: 100px;
+  top: -5px;
+  z-index: 1;
+  box-shadow:3px 3px 3px rgba(0,0,0,0.3);
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  transition-delay: 750ms;
+}
+.active {
+  color: green;
+}

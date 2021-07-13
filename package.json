@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "json-server": "json-server http://jsonplaceholder.typicode.com/db"
+    "json-server": "json-server --watch --delay 2000 'json-server/db.json'"
   },
   "private": true,
   "dependencies": {
